@@ -167,15 +167,15 @@ robot --test "TC04 SQL Step2_InsurerDeath" tests/database/batch_death_test.robot
 📍 **ตำแหน่งที่กำหนด:**
 ```
 E:\program\test-robot\robot-testing-project\tests\database\batch_death_test.robot
-บรรทัดที่ 17: ${DEPT_ID}
-บรรทัดที่ 18: ${JOB_NO}
+${DEPT_ID}
+${JOB_NO}
 ```
 
 **ก่อนรัน TC01, TC02 และ TC03:**
 
 เปิดไฟล์ `E:\program\test-robot\robot-testing-project\tests\database\batch_death_test.robot`
 
-แก้ไขบรรทัดที่ 17:
+
 ```robot
 ${DEPT_ID}    1008    # เปลี่ยนเป็น department_id ที่ต้องการ
 ```
@@ -196,7 +196,7 @@ ${DEPT_ID}    1010
 
 เปิดไฟล์ `E:\program\test-robot\robot-testing-project\tests\database\batch_death_test.robot`
 
-แก้ไขบรรทัดที่ 18:
+
 ```robot
 ${JOB_NO}    9898    # เปลี่ยนเป็น job_no ที่ได้จาก Batch (TC02)
 ```
