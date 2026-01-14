@@ -33,6 +33,36 @@ DEPT_ID:       <department_id>
 results/batch_backtowork/
 ```
 
+**ตำแหน่งเต็ม:**
+```
+E:\program\test-robot\robot-testing-project\results\batch_backtowork\
+```
+
+## 📁 ตำแหน่งไฟล์
+
+### ไฟล์ Test
+```
+E:\program\test-robot\robot-testing-project\tests\database\batch_backtowork_test.robot
+```
+
+### โฟลเดอร์ผลลัพธ์
+```
+E:\program\test-robot\robot-testing-project\results\batch_backtowork\
+├── 1.Step1_Before_BackToWork_[timestamp].xlsx
+├── 2.Step1_Unemp_After_BackToWork_[timestamp].xlsx
+└── 3.Step3_BackToWork_[timestamp].xlsx
+```
+
+### ไฟล์ Report
+```
+E:\program\test-robot\robot-testing-project\results\
+├── output.xml
+├── log.html
+└── report.html
+```
+
+---
+
 ## 📝 Test Cases
 
 ### TC01: SQL Step1 Before Batch BackToWork
@@ -138,7 +168,9 @@ robot --test "TC04 SQL Step3_BackToWork" tests/database/batch_backtowork_test.ro
 
 **ก่อนรัน TC01 และ TC03:**
 
-เปิดไฟล์ `batch_backtowork_test.robot` และแก้ไขบรรทัดที่ 17:
+เปิดไฟล์ `E:\program\test-robot\robot-testing-project\tests\database\batch_backtowork_test.robot`
+
+แก้ไขบรรทัดที่ 17:
 ```robot
 ${DEPT_ID}    1008    # เปลี่ยนเป็น department_id ที่ต้องการ
 ```
@@ -157,7 +189,9 @@ ${DEPT_ID}    1010
 
 **ก่อนรัน TC04:**
 
-เปิดไฟล์ `batch_backtowork_test.robot` และแก้ไขบรรทัดที่ 19:
+เปิดไฟล์ `E:\program\test-robot\robot-testing-project\tests\database\batch_backtowork_test.robot`
+
+แก้ไขบรรทัดที่ 19:
 ```robot
 ${JOB_NO}    9912    # เปลี่ยนเป็น job_no ที่ได้จาก Batch
 ```
@@ -254,10 +288,18 @@ python run_tests.py --type database
 
 ### ไฟล์ Excel ที่สร้าง
 ```
-results/batch_backtowork/
+E:\program\test-robot\robot-testing-project\results\batch_backtowork\
 ├── 1.Step1_Before_BackToWork_20250201_143022.xlsx
 ├── 2.Step1_Unemp_After_BackToWork_20250201_143022.xlsx
 └── 3.Step3_BackToWork_20250201_143022.xlsx
+```
+
+### ไฟล์ Report
+```
+E:\program\test-robot\robot-testing-project\results\
+├── output.xml
+├── log.html
+└── report.html
 ```
 
 ## 🔍 การตรวจสอบผลลัพธ์
