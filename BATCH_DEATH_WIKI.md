@@ -133,27 +133,6 @@ robot --test "TC01 SQL Step1 Before Batch Death" tests/database/batch_death_test
 
 ⚠️ **สำคัญ:** ขั้นตอนนี้ต้องรัน Batch ด้วยตนเองผ่านระบบ หรือใช้ POSTMAN/TC02
 
-**วิธีที่ 1: ใช้ POSTMAN**
-```
-POST <batch_api_url>
-Content-Type: application/json
-
-Body:
-{
-  "jobName": "verifyInsurerDeathMonthlyJob",
-  "userName": "testBatch",
-  "businessDate": "2025-02-01",
-  "additionBatchParams": {
-    "departmentIds": "1006",
-    "benefitType": "7"
-  }
-}
-```
-
-**วิธีที่ 2: รัน TC02**
-```bash
-robot --test "TC02 Call Batch Check Death" tests/database/batch_death_test.robot
-```
 
 **วิธีที่ 3: รันผ่านระบบ**
 - เข้าระบบ Batch Management
