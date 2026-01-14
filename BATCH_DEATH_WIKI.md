@@ -134,11 +134,6 @@ robot --test "TC01 SQL Step1 Before Batch Death" tests/database/batch_death_test
 ⚠️ **สำคัญ:** ขั้นตอนนี้ต้องรัน Batch ด้วยตนเองผ่านระบบ หรือใช้ POSTMAN/TC02
 
 
-**วิธีที่ 3: รันผ่านระบบ**
-- เข้าระบบ Batch Management
-- เลือก Job: verifyInsurerDeathMonthlyJob
-- กำหนด Parameters และรัน
-
 **ผลลัพธ์:**
 - Batch ทำงานสำเร็จ
 - **จดบันทึก `job_no`** ที่ได้จากการรัน (เช่น 12345)
